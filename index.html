@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taklifnoma 🤫</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <header class="app-header">
+        <button id="musicToggle" class="icon-btn">
+            <i class="fas fa-music"></i>
+        </button>
+        <div class="lang-switch">
+            <!-- 1. Tugmalarga onclick qo'shildi -->
+            <button class="lang-btn" onclick="changeLang('ru', this)">RU</button>
+            <button class="lang-btn active" onclick="changeLang('uz', this)">UZ</button>
+        </div>
+    </header>
+
+    <!-- Intro Lock Screen -->
+    <div id="introScreen" class="intro-screen">
+        <div class="intro-content">
+            <div class="intro-top">
+                <div class="vertical-line"></div>
+                <i class="fas fa-heart heart-icon"></i>
+            </div>
+            
+            <!-- 2. data-key atributlari qo'shildi -->
+            <h1 class="intro-title" data-key="introTitle">SIZGA<br>TAKLIFNOMA<br>KELDI</h1>
+
+            <div class="lock-container">
+    <button id="unlockBtn" class="lock-btn">
+        <i class="fas fa-lock"></i>
+    </button>
+    <p class="lock-text" data-key="lockText">Qulfchani bosib,<br>taklifnomani oching</p>
+</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="main-content hidden">
+        
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <img src="/photo/ChatGPT Image 8 мая 2026 г., 16_55_42.png" alt="Couple" class="hero-bg">
+            <div class="hero-content">
+                <h1 class="couple-names">TEMURBEK<br>VA<br>NODIRABEGIM</h1>
+                <div class="scroll-down" id="scrollDownBtn">
+                    <div class="vertical-line-small"></div>
+                    <p data-key="scrollDown">PASTGA SURING</p>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="message-section" id="messageSection">
+            <h2 class="message-title" data-key="msgTitle">Aziz va qadrdon<br>insonimiz!</h2>
+            <p class="message-para" data-key="msgPara1">Hayotimizdagi eng baxtli kunlardan biri -<br>nikoh to'yimizni siz bilan birga nishonlashni<br>niyat qildik.</p>
+            <p class="message-para" data-key="msgPara2">Sizni ushbu kechamizga samimiy taklif<br>etamiz.</p>
+            <p class="message-para" data-key="msgPara3">Quvonchli kunimizda aziz mehmonimiz<br>bo'lishingizni intizorlik bilan kutamiz.</p>
+        </section>
+
+        <!-- Calendar Section -->
+      <section class="calendar-section">
+    <h2 class="calendar-title" data-key="calendarTitle" data-uz="MAY 2026" data-ru="МАЙ 2026">MAY 2026</h2>
+    
+    <div class="calendar">
+        <div class="days-header" data-key="daysHeader">
+            <span>DU</span><span>SE</span><span>CHOR</span><span>PAY</span><span>JU</span><span>SHA</span><span>YA</span>
+        </div>
+        <div class="days-grid">
+            <span></span><span></span><span></span><span></span>
+            <span>1</span>
+            <span class="highlight-date">
+                <i class="fas fa-heart bg-heart"></i>5
+            </span>
+            <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+            <span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span>
+            <span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span>
+            <span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
+        </div>
+    </div>
+</section>
+
+        <!-- Venue Section -->
+        <section class="venue-section">
+            <div class="building-ill">
+                <img src="/photo/ChatGPT Image 8 мая 2026 г., 16_52_07.png" alt="Building Illustration" style="width:100%; max-width:300px; filter: grayscale(100%) sepia(100%) hue-rotate(300deg) saturate(150%) brightness(1.2);">
+            </div>
+            
+            <h2 class="venue-title" data-key="venueTitle">To'y manzili</h2>
+            <p class="venue-subtitle" data-key="venueName">"ROHAT"<br>TANTANALAR SAROYI</p>
+            <p class="venue-address" data-key="venueAddress">Manzil: Chilonzor tumani, Arnasoy<br>ko'chasi 7/2.</p>
+            
+            <div class="map-buttons">
+                <a href="#" class="map-btn" data-key="yandexMap">YANDEX XARITASI</a>
+                <a href="#" class="map-btn" data-key="googleMap">GOOGLE MAPS</a>
+            </div>
+
+            <div class="footer-note">
+                <h3 class="toyona" data-key="toyonaSmall">To'yona</h3>
+                <p class="names-faded">KELIN VA KUYOV<br>TEMURBEK VA NODIRABEGIM</p>
+            </div>
+        </section>
+
+        <!-- To'yona (Karta) Section -->
+        <section class="card-section">
+    <div class="card-container">
+        <h2 class="toyona-title" data-key="toyonaMain">TO'YONA UCHUN</h2>
+        <p class="toyona-desc" data-key="toyonaDesc">
+            Agar siz yoshlarga pul ko'rinishida sovg'a bermoqchi bo'lsangiz, ushbu karta raqamidan foydalanishingiz mumkin:
+        </p>
+        
+        <div class="payment-card">
+            <div class="card-chip"></div>
+            
+            <div class="card-number" id="cardNumber">8600 1234 5678 9012</div>
+            
+            <div class="card-info">
+                <div class="card-holder">
+                    <span class="label" data-key="cardHolderLabel">KARTA EGASI</span>
+                    <span class="name">TEMURBEK FULONCHIYEV</span>
+                </div>
+                <div class="card-brand">VISA</div>
+            </div>
+        </div>
+
+       <button class="copy-btn" onclick="copyCardNumber()" data-key="copyBtn">
+    <i class="fas fa-copy"></i> Kartani nusxalash
+</button>
+    </div>
+</section>
+    </div>
+
+  
+<section class="timer-section">
+    <h2 class="timer-title" data-key="timerTitle">Har lahzani sanayapmiz</h2>
+    
+    <div class="countdown-container">
+        <div class="time-box">
+            <span id="days">00</span>
+            <p data-key="unitDay">KUN</p>
+        </div>
+        <div class="time-separator">:</div>
+        <div class="time-box">
+            <span id="hours">00</span>
+            <p data-key="unitHour">SOAT</p>
+        </div>
+        <div class="time-separator">:</div>
+        <div class="time-box">
+            <span id="minutes">00</span>
+            <p data-key="unitMin">DAQIQA</p>
+        </div>
+        <div class="time-separator">:</div>
+        <div class="time-box">
+            <span id="seconds">00</span>
+            <p data-key="unitSec">SONIYA</p>
+        </div>
+    </div>
+
+    <p class="timer-subtitle" data-key="timerSubtitle">Sizni intiqlik bilan kutamiz.</p>
+    
+    <div class="rings-icon">
+        <img src="/photo/ChatGPT Image May 8, 2026, 05_10_06 PM.png" alt="Rings">
+    </div>
+
+    <div class="footer-note">
+        <h3 class="toyona" data-key="toyonaSmall">To'yona</h3>
+    </div>
+</section>
+    <!-- Audio Element -->
+    <audio id="bgMusic" loop>
+        <source src="/music/good_b_music-cinematic-fairy-tale-story-main-8697.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 3. JAVASCRIPT QISMI -->
+    <script>
+        const translations = {
+            uz: {
+                introTitle: "SIZGA<br>TAKLIFNOMA<br>KELDI",
+                lockText: "Qulfchani bosib,<br>taklifnomani oching",
+                scrollDown: "PASTGA SURING",
+                msgTitle: "Aziz va qadrdon<br>insonimiz!",
+                msgPara1: "Hayotimizdagi eng baxtli kunlardan biri -<br>nikoh to'yimizni siz bilan birga nishonlashni<br>niyat qildik.",
+                msgPara2: "Sizni ushbu kechamizga samimiy taklif<br>etamiz.",
+                msgPara3: "Quvonchli kunimizda aziz mehmonimiz<br>bo'lishingizni intizorlik bilan kutamiz.",
+                calendarTitle: "APREL 2026",
+                daysHeader: "<span>DU</span><span>SE</span><span>CHOR</span><span>PAY</span><span>JU</span><span>SHA</span><span>YA</span>",
+                venueTitle: "To'y manzili",
+                venueName: '"ROHAT"<br>TANTANALAR SAROYI',
+                venueAddress: "Manzil: Chilonzor tumani, Arnasoy<br>ko'chasi 7/2.",
+                yandexMap: "YANDEX XARITASI",
+                googleMap: "GOOGLE MAPS",
+                toyonaSmall: "To'yona",
+                toyonaMain: "TO'YONA UCHUN",
+                toyonaDesc: "Agar siz yoshlarga pul ko'rinishida sovg'a bermoqchi bo'lsangiz, ushbu karta raqamidan foydalanishingiz mumkin:",
+                cardHolderLabel: "EGA:",
+                copyBtn: '<i class="fas fa-copy"></i> Kartani nusxalash'
+           
+            },
+            ru: {
+                introTitle: "ВАМ<br>ПРИСЛАЛИ<br>ПРИГЛАШЕНИЕ",
+                lockText: "Нажмите на замок,<br>чтобы открыть",
+                scrollDown: "ЛИСТАЙТЕ ВНИЗ",
+                msgTitle: "Дорогой и близкий<br>наш человек!",
+                msgPara1: "Один из самых счастливых дней в нашей жизни -<br>мы решили отпраздновать нашу свадьбу вместе с вами.",
+                msgPara2: "Мы искренне приглашаем вас<br>на этот вечер.",
+                msgPara3: "Мы с нетерпением ждем возможности видеть вас<br>нашим дорогим гостем в наш радостный день.",
+                calendarTitle: "АПРЕЛЬ 2026",
+                daysHeader: "<span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span>СБ</span><span>ВС</span>",
+                venueTitle: "Место проведения",
+                venueName: 'ДВОРЕЦ ТОРЖЕСТВ<br>"ROHAT"',
+                venueAddress: "Адрес: Чиланзарский район, ул. Арнасай<br>7/2.",
+                yandexMap: "ЯНДЕКС КАРТЫ",
+                googleMap: "GOOGLE MAPS",
+                toyonaSmall: "Подарки",
+                toyonaMain: "ДЛЯ ПОДАРКОВ",
+                toyonaDesc: "Если вы хотите сделать подарок в денежной форме, вы можете использовать этот номер карты:",
+                cardHolderLabel: "ВЛАДЕЛЕЦ:",
+                copyBtn: '<i class="fas fa-copy"></i> Копировать номер'
+            }
+        };
+
+        function changeLang(lang, btn) {
+            const elements = document.querySelectorAll('[data-key]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-key');
+                if (translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Active tugmani yangilash
+            document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            localStorage.setItem('selectedLang', lang);
+        }
+
+        // Sahifa yuklanganda oxirgi tilni eslab qolish
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('selectedLang') || 'uz';
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => {
+                if (btn.innerText.toLowerCase() === savedLang) {
+                    changeLang(savedLang, btn);
+                }
+            });
+        });
+
+        // Karta raqamini nusxalash funksiyasi
+        function copyCardNumber() {
+            const cardNumber = document.getElementById('cardNumber').innerText;
+            navigator.clipboard.writeText(cardNumber).then(() => {
+                alert("Karta raqami nusxalandi!");
+            });
+        }
+    </script>
+    
+    <!-- Agar sizda tashqi script.js bo'lsa, undagi introScreen ochilish kodlari saqlanib qolsin -->
+    <script src="script.js"></script>
+</body>
+</html>
